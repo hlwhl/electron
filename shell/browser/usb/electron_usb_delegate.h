@@ -59,7 +59,7 @@ class ElectronUsbDelegate : public content::UsbDelegate {
   bool HasDevicePermission(content::BrowserContext* browser_context,
                            content::RenderFrameHost* frame,
                            const url::Origin& origin,
-                           const device::mojom::UsbDeviceInfo& device) override;
+                           const device::mojom::UsbDeviceInfo& device_info) override;
   void GetDevices(
       content::BrowserContext* browser_context,
       blink::mojom::WebUsbService::GetDevicesCallback callback) override;
